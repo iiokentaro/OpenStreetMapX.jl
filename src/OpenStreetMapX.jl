@@ -30,7 +30,7 @@ export find_intersections, find_segments #Get intersections or segments of the r
 export features_to_graph, find_optimal_waypoint_approx, find_optimal_waypoint_exact
 export find_route, shortest_route, fastest_route #Routing funcions
 export nodes_within_weights, nodes_within_driving_distance, nodes_within_driving_time #Find nodes within specified range
-export get_map_data, parseOSM
+export get_map_data, parseOSM, parsePBF
 export get_google_route
 export encode, decode
 export generate_point_in_bounds, point_to_nodes
