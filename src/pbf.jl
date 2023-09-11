@@ -102,6 +102,7 @@ function process_element(osm, pbf_relation::OSMPBF.Relation, table, lat_offset, 
         push!(relation.members, Dict(
             "type" => OSMPBF.Relation_MemberType[types[i] + 1],
             "ref" => string(memids[i]),
+            "role" => table[pbf_relation.roles_sid[i] + 1],
         ))
     end
     if isdefined(pbf_relation, :keys)
